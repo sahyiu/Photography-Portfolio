@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: "Overlock", sans-serif;
+    background-color: #A2855D;
+    color: #fff;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding-top: 25px;
+    width: 100%;
+    background-color: #7a6242;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .header-left {
+    display: flex;
+    padding-left: 10%;
+    align-items: center;
+    gap: 15px;
+}
+
+header h1 {
+    margin: 0;
+    color: #4B433B;
+    font-size: 24px;
+}
+
+header .header-left button {
+    padding: 10px 20px;
+    color: #4B433B;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+header .header-left button:hover {
+    color: antiquewhite;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding-right: 10%;
+}
+
+header .header-right .textlogo {
+    height: 50px;
+    width: auto;
+}
+
+header .header-right .logo {
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+main.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 8%;
+}
+
+.contact-details {
+    font-size: 1.2rem;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 3.9%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #7a6242;
+    width: 100%;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main.grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}

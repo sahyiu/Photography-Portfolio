@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style-work.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/vistaglowstudio.png' %}" alt="TextLogo" class="textlogo">
+    </header>
+
+    <!-- Body Section -->
+    <main>
+        <div class="grid-container">
+            <div class="column column-1">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg13.jpg' %}" alt="Work 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg.jpg' %}" alt="Work 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg3.jpg' %}" alt="Work 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg12.jpg' %}" alt="Work 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg5.jpg' %}" alt="Work 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg2.jpg' %}" alt="Work 6">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg8.jpg' %}" alt="Work 19">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column column-2">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg7.jpg' %}" alt="Work 7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg6.jpg' %}" alt="Work 8">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg9.jpg' %}" alt="Work 9">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg10.jpg' %}" alt="Work 10">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg21.jpg' %}" alt="Work 11">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg1.jpg' %}" alt="Work 12">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg16.jpg' %}" alt="Work 20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column column-3">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg4.jpg' %}" alt="Work 13">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg11.jpg' %}" alt="Work 14">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg15.jpg' %}" alt="Work 15">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg18.jpg' %}" alt="Work 16">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg17.jpg' %}" alt="Work 17">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg14.jpg' %}" alt="Work 18">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/displayimg19.jpg' %}" alt="Work 21">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/script.js' %}" defer></script>
+</body>
+</html>

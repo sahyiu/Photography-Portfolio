@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style-index.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Grey+Qo&family=Gwendolyn:wght@400;700&family=Jacquard+24&family=League+Script&family=Lugrasimo&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quintessential&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="header-left">
+                <h1>Portfolio</h1>
+                <button onclick="window.location.href='{% url 'contact' %}'">Contacts</button>
+            </div>
+            <div class="header-right">
+                <img src="{% static 'images/vistaglow.png' %}" alt="TextLogo" class="textlogo">
+                <img src="{% static 'images/logo1.png' %}" alt="Logo" class="logo">
+            </div>
+        </header>
+
+        <!-- Body Section -->
+        <main>
+            <div class="work-samples">
+                <div class="work1">
+                    <img src="{% static 'images/displayimg5.jpg' %}" alt="Work 1">
+                </div>
+                <div class="work2">
+                    <img src="{% static 'images/displayimg3.jpg' %}" alt="Work 2">
+                </div>
+                <div class="work3">
+                    <img src="{% static 'images/displayimg4.jpg' %}" alt="Work 3">
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <button onclick="window.location.href='{% url 'works' %}'">More Works</button>
+        </footer>
+    </div>
+</body>
+</html>

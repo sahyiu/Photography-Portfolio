@@ -1,0 +1,120 @@
+/* General Body Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #A2855D;
+    font-family: "Overlock", sans-serif;
+    font-style: normal;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh; /* Set a specific height for the header */
+    background-color: #A2855D;
+    color: white;
+    padding-top: 1%;
+    box-sizing: border-box;
+}
+
+header .header-left {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+header .header-left h1 {
+    margin: 0;
+    color: #4B433B;
+    padding-left: 100%;
+    font-size: 24px; /* Slightly increase the font size */
+}
+
+header .header-left button {
+    padding: 10px 20px;
+    color: #4B433B;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+header .header-left button:hover {
+    color: antiquewhite;
+}
+
+header .header-right{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding-right: 10%;
+
+}
+
+header .header-right .textlogo {
+    height: 50px;
+    width: auto;
+}
+
+header .header-right .logo {
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh; /* Set a specific height for the main content */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Flexed Images Section */
+.work-samples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.work-samples img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    height: 10vh; /* Set a specific height for the footer */
+    background-color: #A2855D;
+    color: white;
+    padding-top: 1.5%;
+    box-sizing: border-box;
+}
+
+footer button {
+    padding: 10px 20px;
+    border: 3px solid #4B433B;
+    background-color: transparent;
+    color: #4B433B;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer button:hover {
+    background-color: #F3DBBF;
+    color: #F3DBBF;
+}

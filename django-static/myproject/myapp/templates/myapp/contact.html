@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'css/style-contact.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="header-left">
+                <h1>Contact Us</h1>
+                <button onclick="window.location.href='{% url 'home' %}'">Home</button>
+                <button onclick="window.location.href='{% url 'works' %}'">Works</button>
+            </div>
+            <div class="header-right">
+                <img src="{% static 'images/vistaglow.png' %}" alt="TextLogo" class="textlogo">
+                <img src="{% static 'images/logo1.png' %}" alt="Logo" class="logo">
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="grid-container">
+            <div class="contact-details">
+                <h2>Get in Touch</h2>
+                <p><strong>Address:</strong> Visda Apartment, Las Pinas City, Philippines</p>
+                <p><strong>Email:</strong> vistaglowstudio@gmail.com</p>
+                <p><strong>Phone:</strong> 09164701336</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.132325447182!2d120.97425937510376!3d14.477090085994709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cdfd09aacf23%3A0xb5a5225763bc8d9b!2sVisda%20apartment%20las-pi%C3%B1as!5e0!3m2!1sen!2sph!4v1736685743515!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 VistaGlow Studio. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

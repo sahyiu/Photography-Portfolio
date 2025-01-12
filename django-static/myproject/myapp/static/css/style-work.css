@@ -1,0 +1,78 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: "Overlock", sans-serif;
+    background-color: #A2855D;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #A2855D;
+}
+
+.textlogo {
+    max-width: 250px; /* Adjust the logo size as needed */
+    height: 70px;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh; /* Set a specific height for the main content */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;}
+
+/* Grid Container Styling */
+.grid-container {
+    display: flex;
+    gap: 5px;  /* Reduced gap between columns */
+    justify-content: space-between;
+}
+
+/* Column Styling */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Reduced gap between images */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Swiper Container Styling */
+.swiper {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* Increased height for larger images */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none; /* Remove background */
+}
+
+.swiper-slide img {
+    display: block;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    object-fit: contain; /* Ensure images maintain their aspect ratio */
+}
+
+/* For smaller screen sizes, adjust the layout */
+@media (max-width: 768px) {
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
